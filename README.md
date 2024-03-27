@@ -1,5 +1,7 @@
 # Igraliste
 
+Vite + React + Tailwind
+
 Separate on parts:
 - Navbar
 - carousel
