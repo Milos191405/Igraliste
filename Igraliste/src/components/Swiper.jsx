@@ -3,16 +3,21 @@ import { Navigation, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import Logo from "../assets/Logo.jpeg";
+import Igraliste1 from "../assets/Home/Igraliste1.jpg";
+import Igraliste2 from "../assets/Home/Igraliste2.jpg";
+import Igraliste3 from "../assets/Home/Igraliste3.jpg";
+
 
 export default function App() {
 
+  
+
     
-     const [showNavigation, setShowNavigation] = useState(false);
+     const [showNavigation, setShowNavigation] = useState(true);
   return (
     <>
       <Swiper
-        navigation={true}
+        navigation={showNavigation}
         autoplay={{
           delay: 1000,
           disableOnInteraction: false,
@@ -23,43 +28,31 @@ export default function App() {
         onAutoplayStop={() => setShowNavigation(true)}
         onSlideChange={() => setShowNavigation(false)}
         modules={[Navigation, Autoplay]}
-        className="mySwiper mt-[80px] border-blue-600 w-screen"
+        className="mySwiper  border-blue-600 w-screen h-[600px] "
       >
-        <SwiperSlide className="border border-blue-600 pl-5 pr-5 w-60">
-          <img src={Logo} alt="Logo" className="w-screen" />
+        <SwiperSlide >
+          <img
+            src={Igraliste1}
+            alt="Logo"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
           Slide 1
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={Logo} alt="Logo" />
+        <SwiperSlide >
+          <img
+            src={Igraliste2}
+            alt="Logo"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
           Slide 2
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={Logo} alt="Logo" />
+        <SwiperSlide >
+          <img
+            src={Igraliste3}
+            alt="Logo"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
           Slide 3
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Logo} alt="Logo" />
-          Slide 4
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Logo} alt="Logo" />
-          Slide 5
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Logo} alt="Logo" />
-          Slide 6
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Logo} alt="Logo" />
-          Slide 7
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Logo} alt="Logo" />
-          Slide 8
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={Logo} alt="Logo" />
-          Slide 9
         </SwiperSlide>
       </Swiper>
     </>

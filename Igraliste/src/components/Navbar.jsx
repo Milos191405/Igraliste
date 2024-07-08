@@ -12,7 +12,7 @@ function Navbar() {
   const closeMenu = () => setNav(false);
 
   return (
-    <nav className="fixed top w-full h-[80px] flex justify-between items-center px-4 bg-[#fffdfd] text-gray-700">
+    <nav className="fixed top w-full h-[80px] flex justify-between items-center px-4 bg-[#fffdfd] text-gray-700 border-b-2">
       <div>
         <img src={Logo} alt="Logo" className="w-[200px]" />
       </div>
@@ -34,7 +34,7 @@ function Navbar() {
           <NavLink
             to="/rodjendaonica"
             className={({ isActive }) =>
-              isActive ? "text-black" : "hover:text-black"
+              isActive ? "text-red-500" : "hover:text-red-500"
             }
           >
             Rodjendaonica
@@ -45,7 +45,7 @@ function Navbar() {
           <NavLink
             to="/radionice"
             className={({ isActive }) =>
-              isActive ? "text-black" : "hover:text-black"
+              isActive ? "text-red-500" : "hover:text-red-500"
             }
           >
             Radionice
@@ -56,7 +56,7 @@ function Navbar() {
           <NavLink
             to="/blog"
             className={({ isActive }) =>
-              isActive ? "text-black" : "hover:text-black"
+              isActive ? "text-red-500" : "hover:text-red-500"
             }
           >
             Blog
@@ -67,7 +67,7 @@ function Navbar() {
           <NavLink
             to="/cenovnik"
             className={({ isActive }) =>
-              isActive ? "text-black" : "hover:text-black"
+              isActive ? "text-red-500" : "hover:text-red-500"
             }
           >
             Cenovnik
@@ -78,7 +78,7 @@ function Navbar() {
           <NavLink
             to="/galerija"
             className={({ isActive }) =>
-              isActive ? "text-black" : "hover:text-black"
+              isActive ? "text-red-500" : "hover:text-red-500"
             }
           >
             Galerija
@@ -89,7 +89,7 @@ function Navbar() {
           <NavLink
             to="/kontakt"
             className={({ isActive }) =>
-              isActive ? "text-black" : "hover:text-black"
+              isActive ? "text-red-500" : "hover:text-red-500"
             }
           >
             Kontakt
@@ -113,7 +113,7 @@ function Navbar() {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#fffdfd] text-gray-500 flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#fffdfd] text-gray-500 flex flex-col justify-center items-center z-40 "
         }
       >
         <li
