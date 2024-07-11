@@ -4,13 +4,15 @@ import Navbar from "../src/components/Navbar";
 import Home from "../src/components/Home";
 import Dobrodosli from "./components/Dobrodosli.jsx";
 
+
+
 function App() {
   const [showDobrodosli, setShowDobrodosli] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowDobrodosli(false);
-    }, 1000); // 2 seconds
+    }, 3000); // 2 seconds
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,7 +24,7 @@ function App() {
         <>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />} />
+             <Route path="/" element={<Home />} />
           </Routes>
         </>
       )}

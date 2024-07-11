@@ -12,13 +12,13 @@ function Navbar() {
   const closeMenu = () => setNav(false);
 
   return (
-    <nav className="fixed top w-full h-[80px] flex justify-between items-center px-4 bg-[#fffdfd] text-gray-700 border-b-2">
-      <div>
+    <nav className="fixed top h-[80px] w-screen flex justify-between items-center px-4 bg-[#fffdfd] text-gray-700">
+      <div className="border-red-600">
         <img src={Logo} alt="Logo" className="w-[200px]" />
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-3">
+      <ul className="hidden md:flex gap-3 border-red-600">
         <li>
           <NavLink
             to="/"
@@ -113,54 +113,54 @@ function Navbar() {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#fffdfd] text-gray-500 flex flex-col justify-center items-center z-40 "
+            : "absolute top-0 left-0 w-screen h-screen bg-[#fffdfd] text-gray-500 flex flex-col justify-center items-center "
         }
       >
         <li
           onClick={closeMenu}
-          className="text-2xl py-6 w-3/4 text-center  hover:text-gray-700 mb-2"
+          className="text-2xl py-2 w-3/4 text-center  hover:text-gray-700 mb-2"
         >
           <Link to="/">Igraonica</Link>
         </li>
 
         <li
           onClick={closeMenu}
-          className="text-2xl py-6 w-3/4 text-center hover:text-gray-700 mb-2"
+          className="text-2xl py-2 w-3/4 text-center  hover:text-gray-700 mb-2"
         >
           <Link to="/rodjendaonica">Rodjendaonica</Link>
         </li>
 
         <li
           onClick={closeMenu}
-          className="text-2xl py-6 w-3/4 text-center  hover:text-gray-700 mb-2"
+          className="text-2xl py-2 w-3/4 text-center  hover:text-gray-700 mb-2"
         >
           <Link to="/radionice">Radionice</Link>
         </li>
 
         <li
           onClick={closeMenu}
-          className="text-2xl py-6 w-3/4 text-center  hover:text-gray-700 mb-2"
+          className="text-2xl py-2 w-3/4 text-center  hover:text-gray-700 mb-2"
         >
           <Link to="/blog">Blog</Link>
         </li>
 
         <li
           onClick={closeMenu}
-          className="text-2xl py-6 w-3/4 text-center  hover:text-gray-700 mb-2"
+          className="text-2xl py-2 w-3/4 text-center  hover:text-gray-700 mb-2"
         >
           <Link to="/cenovnik">Cenovnik</Link>
         </li>
 
         <li
           onClick={closeMenu}
-          className="text-2xl py-6 w-3/4 text-center  hover:text-gray-700 mb-2"
+          className="text-2xl py-2 w-3/4 text-center  hover:text-gray-700 mb-2"
         >
           <Link to="/galerija">Galerija</Link>
         </li>
 
         <li
           onClick={closeMenu}
-          className="text-2xl py-6 w-3/4 text-center  hover:text-gray-700 mb-2"
+          className="text-2xl py-2 w-3/4 text-center  hover:text-gray-700 mb-2"
         >
           <Link to="/kontakt">Kontakt</Link>
         </li>

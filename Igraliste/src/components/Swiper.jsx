@@ -24,33 +24,33 @@ export default function App() {
           pauseOnMouseEnter: true,
           restartDelay: 1000,
         }}
-        onAutoplayStart={() => setShowNavigation(false)}
+        onAutoplayStart={() => setShowNavigation(true)}
         onAutoplayStop={() => setShowNavigation(true)}
         onSlideChange={() => setShowNavigation(false)}
         modules={[Navigation, Autoplay]}
-        className="mySwiper  border-blue-600 w-screen h-[600px] "
+        className="mySwiper  border-blue-600 h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] w-full  -z-10   "
       >
-        <SwiperSlide >
+        <SwiperSlide>
           <img
             src={Igraliste1}
             alt="Logo"
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-screen  object-cover"
           />
           Slide 1
         </SwiperSlide>
-        <SwiperSlide >
+        <SwiperSlide>
           <img
             src={Igraliste2}
             alt="Logo"
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-screen object-cover"
           />
           Slide 2
         </SwiperSlide>
-        <SwiperSlide >
+        <SwiperSlide>
           <img
             src={Igraliste3}
             alt="Logo"
-            className="absolute inset-0 h-full w-full object-cover"
+            className="absolute inset-0 h-full w-screen object-cover"
           />
           Slide 3
         </SwiperSlide>

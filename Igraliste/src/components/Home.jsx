@@ -1,71 +1,108 @@
-
-import Swiper from './Swiper'
-import Meda from '../assets/Home/meda-igraliste.webp'
-import Panda from '../assets/Home/panda-igraliste.webp'
-
-
+// import Swiper from './Swiper'
+import Meda from "../assets/Home/meda-igraliste.webp";
+import Panda from "../assets/Home/panda-igraliste.webp";
+import SaidAboutUs from "./SaidAboutUs/SaidAboutUs.jsx";
+import Carousel from "./CarouselHome/Carousel.jsx";
+import Blog1 from "./Card/odnos-dece-i-roditelja.webp";
+import Blog2 from "./Card/naslovna-maskenbal.webp";
+import Blog3 from "./Card/igraliste-i-kutkovi-za-decu-4.webp";
+import Footer from "./Footer/Footer.jsx";
+import RodjendaniGalerija from "./Galerie/galerija-torta.webp"
+import IgraonicaGalerija from './Galerie/galerija-nasaigraonica.webp'
+import SpecijalniDogadjajiGalerija from './Galerie/galerija-specijalni-dogadjaji.webp'
+import RadionicaGalerija from './Galerie/galerija-radionica.webp'
 
 function Home() {
-
   return (
-    <main className=" h-[200px] pt-[80px]">
-      <Swiper />
-      <article className="flex px-2 py-4 border border-red-600">
-        <img src={Meda} className="w-1/4" />
-        <p className="text-center font-style: italic px-8 ">
+    <main className="pt-[80px] w-screen   ">
+      {/* <Swiper /> */}
+      <Carousel />
+      <article className="flex flex-col px-2  bg-white  ">
+        <img src={Meda} className="w-1/2 mx-auto " />
+        <p className="text-center text-sm font-style: italic px-8">
           Igralište je dečija igraonica namenjena deci najmladjeg uzrasta. Pored
           prostora koji je u potpunosti prilagodjen mališanima i njihovoj
           bezbednoj igri, Igralište sadrži i kafić u kome naši odrasli gosti
           mogu da se opuste u prijatnoj atmosferi. <br />
-          <br /> Igraonica i kafić su u istom nivou pa deca nesmetano mogu
-          prilaziti odraslima što im daje dodatan osećaj sigurnosti. <br />
-          <br /> U prostoru za igru se nalaze originalni i edukativni dečiji
-          sadržaji. Pored 3D Lavirinta nudimo i čitav niz igračaka u kojima deca
-          mogu da se igraju igre uloga, pa tako postaju pravi mali kuvari,
+          Igraonica i kafić su u istom nivou pa deca nesmetano mogu prilaziti
+          odraslima što im daje dodatan osećaj sigurnosti.
+          <br />
+          U prostoru za igru se nalaze originalni i edukativni dečiji sadržaji.
+          Pored 3D Lavirinta nudimo i čitav niz igračaka u kojima deca mogu da
+          se igraju igre uloga, pa tako postaju pravi mali kuvari,
           majstori,lekari, prodavci,vozači, vatrogasci, princeze… Imamo i veliki
           izbor društvenih igara, kocaka i sličnih igračaka za decu veliku i
           malu. <br />
-          <br />
           Za najmladje goste tu je bazenčić sa lopticama, ljuljaška, guralice i
           igračke za bebe. <br />
-          <br />
           U našoj igraonici možete proslaviti nezaboravne rodjendane vašim
           mališanima, uživati u svakodnevnoj igri i učestvovati u kreativnim
-          radionicama koje sa puno pažnje priprema naše stručno osoblje. <br />{" "}
+          radionicama koje sa puno pažnje priprema naše stručno osoblje. <br />
           Prostor je klimatizovan, postoji i odvojen deo namenjen pušačima, a za
-          najmladje postoji deo za presvlač<enje className="br"></enje>
+          najmladje postoji deo za presvlačenje
         </p>
-        <img src={Panda} className="w-1/4" />
+        <img
+          src={Panda}
+          className="w-1/2 mx-auto my-auto "
+        />
       </article>
-      <article className="text-center text-3xl">
-        <h2 className="font-style: italic">Zasto smo posebni...</h2>
-        <div className="flex  justify-center  border border-red-600 ">
-          <div className='w-1/4'></div>
-          <div className='flex gap-6 '>
-            <img
-              src={Meda}
-              alt=""
-              className="h-[250px] border border-red-600"
-            />
-            <img
-              src={Meda}
-              alt=""
-              className="h-[250px] border border-red-600"
-            />
-            <img
-              src={Meda}
-              alt=""
-              className="h-[250px] border border-red-600"
-            />
-            <img
-              src={Meda}
-              alt=""
-              className="h-[250px] border border-red-600"
-            />
-          </div>
-          <div className='w-1/4'></div>
+      <article className="text-center text-3xl  bg-white ">
+        <h2 className="font-style: italic text-lg pt-5 pb-5">
+          Zasto smo posebni...
+        </h2>
+        <div className="flex flex-col  ">
+          <img
+            src={RodjendaniGalerija}
+            alt=""
+            className="  w-1/2 mx-auto"
+          />
+          <img
+            src={IgraonicaGalerija}
+            alt=""
+            className="  w-1/2 mx-auto"
+          />
+          <img
+            src={SpecijalniDogadjajiGalerija}
+            alt=""
+            className="  w-1/2 mx-auto"
+          />
+          <img
+            src={RadionicaGalerija}
+            alt=""
+            className="  w-1/2 mx-auto"
+          />
         </div>
       </article>
+      <h2 className="text-center text-lg bg-white w-screen pt-4">
+        Rekli su o nama ...
+      </h2>
+
+      <article>
+        
+        <SaidAboutUs />
+      </article>
+
+      <article className="bg-white">
+        <h2 className="text-center text-lg">Sa naseg bloga...</h2>
+
+        <div className="py-4">
+          <img src={Blog1} alt="" />
+          <p className="text-center text-sm px-4 py-2">
+            Koliko je bitan topao i prisan odnos dece i roditelja?
+          </p>
+        </div>
+
+        <div className="py-4">
+          <img src={Blog2} alt="" />
+          <p className="text-center text-sm px-4 py-2">Igraliste pod maskama</p>
+        </div>
+
+        <div className="py-4">
+          <img src={Blog3} alt="" />
+          <p className="text-center text-sm px-4 py-2">Igraliste i kutkovi</p>
+        </div>
+      </article>
+      <Footer />
     </main>
   );
 }
