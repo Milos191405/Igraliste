@@ -12,7 +12,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowDobrodosli(false);
-    }, 3000); // 2 seconds
+    }, 2000); // 2 seconds
 
     return () => clearTimeout(timer);
   }, []);
