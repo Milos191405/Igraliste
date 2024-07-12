@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram } from "react-icons/fa";
 function Footer() {
   return (
     <>
-      <footer className="bg-black text-white  px-6 h-[]">
+      <footer className="bg-black text-white  px-4 h-[]">
         <div>
           <h3 className="text-sm py-2">Info</h3>
           <p>Kosancic Ivana 6, 21000 Novi Sad</p>

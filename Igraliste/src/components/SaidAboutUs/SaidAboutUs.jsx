@@ -172,7 +172,7 @@ export default function App() {
         pagination={pagination}
         modules={[Pagination, Autoplay]}
         autoplay={{
-          delay: 5000, // Adjust the delay as needed
+          delay: 2000, // Adjust the delay as needed
           disableOnInteraction: true,
         }}
         loop={true}

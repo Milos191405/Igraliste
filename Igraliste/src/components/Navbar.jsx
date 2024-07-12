@@ -113,12 +113,12 @@ function Navbar() {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-screen h-screen bg-[#fffdfd] text-gray-500 flex flex-col justify-center items-center "
+            : "absolute top-0 left-0 w-screen h-screen bg-[#fffdfd] text-gray-700 flex flex-col justify-center items-center "
         }
       >
         <li
           onClick={closeMenu}
-          className="text-2xl py-2 w-3/4 text-center  hover:text-gray-700 mb-2"
+          className="text-2xl py-2 w-3/4 text-center  hover:text-gray-700 mb-2 "
         >
           <Link to="/">Igraonica</Link>
         </li>
