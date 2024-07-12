@@ -78,26 +78,26 @@ function Home() {
         <SaidAboutUs />
       </article>
 
-      <article className="bg-white ">
-        <h2 className="text-center text-lg md:text-2xl py-2 bg-gray-200">
+      <article className="bg-white overflow-hidden ">
+        <h2 className="text-center text-lg md:text-2xl py-2 bg-gray-200 ">
           Sa naseg bloga...
         </h2>
 
-        <div className="py-2 px-2 mb-2 md:px-4  bg-gray-200 ">
+        <div className="py-2 px-2 mb-2 md:px-4 md:py-4  lg:px-8 lg:py-2 bg-gray-200 ">
           <img src={Blog1} alt="" />
-          <p className="text-center text-sm md:text-lg px-4 py-2 ">
+          <p className="text-center text-sm md:text-lg px-4 pt-4 ">
             Koliko je bitan topao i prisan odnos dece i roditelja?
           </p>
         </div>
 
-        <div className="py-2 px-2 mb-2 md:px-4 bg-gray-200  ">
+        <div  className="py-2 px-2 mb-2 md:px-4 md:py-4  lg:px-8 lg:py-2 bg-gray-200">
           <img src={Blog2} alt="" />
-          <p className="text-center text-sm  md:text-lg px-4 py-2">
+          <p className="text-center text-sm  md:text-lg px-4 py-2 ">
             Igraliste pod maskama
           </p>
         </div>
 
-        <div className="py-2 px-2 mb-2 bg-gray-200 mb-4 ">
+        <div  className="py-2 px-2 mb-2 md:px-4 md:py-4  lg:px-8 lg:py-2 bg-gray-200">
           <img src={Blog3} alt="" />
           <p className="text-center text-sm md:text-lg px-4 py-2">
             Igraliste i kutkovi

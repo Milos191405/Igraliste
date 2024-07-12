@@ -12,13 +12,13 @@ function Navbar() {
   const closeMenu = () => setNav(false);
 
   return (
-    <nav className="fixed top h-[80px] w-screen flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700">
+    <nav className="fixed top h-[80px] xl:h-[100px] w-screen flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700">
       <div className="h-full">
-        <img src={Logo} alt="Logo" className="w-[200px]" />
+        <img src={Logo} alt="Logo" className="w-[200px]  mt-[10px]" />
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden lg:flex gap-2  text-sm lg:text-sm">
+      <ul className="hidden lg:flex gap-2  text-sm lg:text-sm xl:text-lg lg:gap-3">
         <li >
           <NavLink
             to="/"
@@ -113,7 +113,7 @@ function Navbar() {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-screen h-screen bg-[#fffdfd] text-gray-700 flex flex-col justify-center items-center "
+            : "absolute top-0 left-0 w-screen h-screen bg-[#fffdfd] text-gray-700  flex flex-col justify-center items-center "
         }
       >
         <li
