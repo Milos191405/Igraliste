@@ -1,3 +1,4 @@
+
 services:
   - type: web
     name: igraliste
@@ -8,4 +9,10 @@ services:
     source:
       repo: https://github.com/Milos191405/Igraliste
       branch: main
-      rootDir: /
+      rootDir: / # or the correct subdirectory
+    buildFilters:
+      includedPaths:
+        - /**/*
+      ignoredPaths:
+        - /docs/**
+    publishDirectory: dist
