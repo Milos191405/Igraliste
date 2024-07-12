@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: igraliste
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    branch: main
+    source:
+      repo: https://github.com/Milos191405/Igraliste
+      branch: main
+      rootDir: /
