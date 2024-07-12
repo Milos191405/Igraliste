@@ -17,9 +17,9 @@ function Home() {
     <main className="pt-[80px] w-screen   ">
       {/* <Swiper /> */}
       <Carousel />
-      <article className="flex flex-col  px-2 bg-white   ">
-        <img src={Meda} className="w-1/2 md:w-1/3 mx-auto   " />
-        <p className="text-center text-sm md:text-lg  font-style: italic px-8">
+      <article className="flex flex-col md:flex-row  px-2 bg-white   ">
+        <img src={Meda} className="w-1/2 md:w-1/5 my-auto  mx-auto md:px-2  " />
+        <p className="text-center text-sm  font-style: italic px-8 md:py-4">
           Igralište je dečija igraonica namenjena deci najmladjeg uzrasta. Pored
           prostora koji je u potpunosti prilagodjen mališanima i njihovoj
           bezbednoj igri, Igralište sadrži i kafić u kome naši odrasli gosti
@@ -41,36 +41,36 @@ function Home() {
           Prostor je klimatizovan, postoji i odvojen deo namenjen pušačima, a za
           najmladje postoji deo za presvlačenje
         </p>
-        <img src={Panda} className="w-1/2 md:w-1/3 mx-auto my-auto " />
+        <img src={Panda} className="w-1/2 md:w-1/5 my-auto mx-auto md:px-2 " />
       </article>
       <article className="text-center text-3xl  bg-gray-200  ">
-        <h2 className="font-style: italic text-lg md:text-2xl pt-5 pb-5">
+        <h2 className="font-style: italic text-lg md:text-xl pt-5 pb-10">
           Zasto smo posebni...
         </h2>
-        <div className="flex flex-col  ">
+        <div className="flex flex-col md:grid grid-cols-2 pb-5 gap-y-2 gap-x-2    ">
           <img
             src={RodjendaniGalerija}
             alt=""
-            className="  w-1/2 mx-auto pb-2"
+            className="  w-1/2  mx-auto md:mx-[50%]   pb-2 md:pb-0  b"
           />
           <img
             src={IgraonicaGalerija}
             alt=""
-            className="  w-1/2 mx-auto pb-2"
+            className="   w-1/2 mx-auto md:mx-0  pb-2 md:pb-0 "
           />
           <img
             src={SpecijalniDogadjajiGalerija}
             alt=""
-            className="  w-1/2 mx-auto pb-2"
+            className="   w-1/2 mx-auto md:mx-[50%] pb-2 md:pb-0"
           />
           <img
             src={RadionicaGalerija}
             alt=""
-            className="  w-1/2 mx-auto pb-2"
+            className="   w-1/2 mx-auto md:mx-0  pb-2 md:pb-0 "
           />
         </div>
       </article>
-      <h2 className="text-center text-lg md:text-2xl bg-white w-screen pt-4">
+      <h2 className="text-center text-lg md:text-xl bg-white w-screen pt-4">
         Rekli su o nama ...
       </h2>
 
@@ -83,21 +83,21 @@ function Home() {
           Sa naseg bloga...
         </h2>
 
-        <div className="py-2 px-2 mb-2 bg-gray-200 ">
+        <div className="py-2 px-2 mb-2 md:px-4  bg-gray-200 ">
           <img src={Blog1} alt="" />
-          <p className="text-center text-sm md:text-lg px-4">
+          <p className="text-center text-sm md:text-lg px-4 py-2 ">
             Koliko je bitan topao i prisan odnos dece i roditelja?
           </p>
         </div>
 
-        <div className="py-2 px-2 mb-2 bg-gray-200  ">
+        <div className="py-2 px-2 mb-2 md:px-4 bg-gray-200  ">
           <img src={Blog2} alt="" />
           <p className="text-center text-sm  md:text-lg px-4 py-2">
             Igraliste pod maskama
           </p>
         </div>
 
-        <div className="py-2 px-2 mb-2 bg-gray-200 ">
+        <div className="py-2 px-2 mb-2 bg-gray-200 mb-4 ">
           <img src={Blog3} alt="" />
           <p className="text-center text-sm md:text-lg px-4 py-2">
             Igraliste i kutkovi

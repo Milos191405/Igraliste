@@ -13,12 +13,12 @@ function Navbar() {
 
   return (
     <nav className="fixed top h-[80px] w-screen flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700">
-      <div className="border-red-600">
+      <div className="h-full">
         <img src={Logo} alt="Logo" className="w-[200px]" />
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden lg:flex gap-2  text-sm">
+      <ul className="hidden lg:flex gap-2  text-sm lg:text-sm">
         <li >
           <NavLink
             to="/"
