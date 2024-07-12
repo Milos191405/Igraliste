@@ -184,7 +184,7 @@ export default function App() {
             key={index}
             className="flex flex-col items-center justify-center px-4 py-8 "
           >
-            <div className="text-center">
+            <div className="text-center md:text-xl">
               <p>{slide.text}</p>
               {slide.author && (
                 <p className="text-red-600 py-2">{slide.author}</p>

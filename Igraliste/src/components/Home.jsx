@@ -17,9 +17,9 @@ function Home() {
     <main className="pt-[80px] w-screen   ">
       {/* <Swiper /> */}
       <Carousel />
-      <article className="flex flex-col px-2 bg-white  ">
-        <img src={Meda} className="w-1/2 mx-auto   " />
-        <p className="text-center text-sm font-style: italic px-8">
+      <article className="flex flex-col  px-2 bg-white   ">
+        <img src={Meda} className="w-1/2 md:w-1/3 mx-auto   " />
+        <p className="text-center text-sm md:text-lg  font-style: italic px-8">
           Igralište je dečija igraonica namenjena deci najmladjeg uzrasta. Pored
           prostora koji je u potpunosti prilagodjen mališanima i njihovoj
           bezbednoj igri, Igralište sadrži i kafić u kome naši odrasli gosti
@@ -41,10 +41,10 @@ function Home() {
           Prostor je klimatizovan, postoji i odvojen deo namenjen pušačima, a za
           najmladje postoji deo za presvlačenje
         </p>
-        <img src={Panda} className="w-1/2 mx-auto my-auto " />
+        <img src={Panda} className="w-1/2 md:w-1/3 mx-auto my-auto " />
       </article>
       <article className="text-center text-3xl  bg-gray-200  ">
-        <h2 className="font-style: italic text-lg pt-5 pb-5">
+        <h2 className="font-style: italic text-lg md:text-2xl pt-5 pb-5">
           Zasto smo posebni...
         </h2>
         <div className="flex flex-col  ">
@@ -70,7 +70,7 @@ function Home() {
           />
         </div>
       </article>
-      <h2 className="text-center text-lg bg-white w-screen pt-4">
+      <h2 className="text-center text-lg md:text-2xl bg-white w-screen pt-4">
         Rekli su o nama ...
       </h2>
 
@@ -79,7 +79,7 @@ function Home() {
       </article>
 
       <article className="bg-white ">
-        <h2 className="text-center text-lg py-2">Sa naseg bloga...</h2>
+        <h2 className="text-center text-lg md:text-2xl py-2 bg-gray-200">Sa naseg bloga...</h2>
 
         <div className="py-2 px-2 mb-2 bg-gray-200 ">
           <img src={Blog1} alt="" />

@@ -18,8 +18,8 @@ function Navbar() {
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-3 border-red-600">
-        <li>
+      <ul className="hidden lg:flex gap-2  text-sm">
+        <li >
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -100,7 +100,7 @@ function Navbar() {
       {/* Hamburger Icon */}
       <div
         onClick={handleClick}
-        className="md:hidden z-10 cursor-pointer"
+        className="lg:hidden z-10 cursor-pointer"
         aria-controls="mobile-menu"
         aria-expanded={nav ? "true" : "false"}
       >
