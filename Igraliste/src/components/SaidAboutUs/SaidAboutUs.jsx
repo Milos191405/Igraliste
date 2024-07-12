@@ -182,7 +182,7 @@ export default function App() {
         {slides.map((slide, index) => (
           <SwiperSlide
             key={index}
-            className="flex flex-col items-center justify-center px-4 py-8 "
+            className="flex flex-col items-center justify-center px-4 md:px-8 py-8 "
           >
             <div className="text-center md:text-xl">
               <p>{slide.text}</p>

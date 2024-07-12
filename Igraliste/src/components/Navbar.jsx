@@ -12,7 +12,7 @@ function Navbar() {
   const closeMenu = () => setNav(false);
 
   return (
-    <nav className="fixed top h-[80px] w-screen flex justify-between items-center px-4 bg-[#fffdfd] text-gray-700">
+    <nav className="fixed top h-[80px] w-screen flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700">
       <div className="border-red-600">
         <img src={Logo} alt="Logo" className="w-[200px]" />
       </div>
