@@ -166,7 +166,7 @@ export default function App() {
       className={isHovered ? "visible-pagination" : "hidden-pagination"}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      style={{ position: "relative", zIndex: "-10" }}
+      style={{ position: "relative", zIndex: "-10", overflow: "hidden"}}
     >
       <Swiper
         pagination={pagination}

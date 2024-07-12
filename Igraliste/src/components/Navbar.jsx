@@ -12,14 +12,18 @@ function Navbar() {
   const closeMenu = () => setNav(false);
 
   return (
-    <nav className="fixed top h-[80px] xl:h-[100px] w-screen flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700">
-      <div className="h-full">
-        <img src={Logo} alt="Logo" className="w-[200px]  mt-[10px]" />
+    <nav className="fixed top h-[80px] xl:h-[100px] w-full flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700 overflow-hidden ">
+      <div className="">
+        <img
+          src={Logo}
+          alt="Logo"
+          className="w-[200px] xl:w-[250px]"
+        />
       </div>
 
       {/* Desktop Menu */}
       <ul className="hidden lg:flex gap-2  text-sm lg:text-sm xl:text-lg lg:gap-3">
-        <li >
+        <li>
           <NavLink
             to="/"
             className={({ isActive }) =>

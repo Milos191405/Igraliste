@@ -37,7 +37,7 @@ function App() {
    };
 
   return (
-    <div className="h-[200px] sm:h-[300px] md:h-[400px] w-screen m-auto relative group -z-10">
+    <div className="h-[200px] sm:h-[300px] md:h-[400px] xl:h-[600px] 2xl:h-[800px] w-screen m-auto relative group -z-10 overflow-x-hidden">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full bg-center bg-cover duration-500"
