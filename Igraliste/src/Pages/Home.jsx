@@ -1,16 +1,16 @@
 // import Swiper from './Swiper'
 import Meda from "../assets/Home/meda-igraliste.webp";
 import Panda from "../assets/Home/panda-igraliste.webp";
-import SaidAboutUs from "./SaidAboutUs/SaidAboutUs.jsx";
-import Carousel from "./CarouselHome/Carousel.jsx";
-import Blog1 from "./Card/odnos-dece-i-roditelja.webp";
-import Blog2 from "./Card/naslovna-maskenbal.webp";
-import Blog3 from "./Card/igraliste-i-kutkovi-za-decu-4.webp";
-import Footer from "./Footer/Footer.jsx";
-import RodjendaniGalerija from "./Galerie/galerija-torta.webp"
-import IgraonicaGalerija from './Galerie/galerija-nasaigraonica.webp'
-import SpecijalniDogadjajiGalerija from './Galerie/galerija-specijalni-dogadjaji.webp'
-import RadionicaGalerija from './Galerie/galerija-radionica.webp'
+import SaidAboutUs from "../components/SaidAboutUs/SaidAboutUs.jsx";
+import Carousel from "../components/CarouselHome/Carousel.jsx";
+import Blog1 from "../components/Card/odnos-dece-i-roditelja.webp";
+import Blog2 from "../components/Card/naslovna-maskenbal.webp";
+import Blog3 from "../components/Card/igraliste-i-kutkovi-za-decu-4.webp";
+import Footer from "../components/Footer/Footer.jsx";
+import RodjendaniGalerija from "../components/Galerie/galerija-torta.webp";
+import IgraonicaGalerija from '../components/Galerie/galerija-nasaigraonica.webp'
+import SpecijalniDogadjajiGalerija from '../components/Galerie/galerija-specijalni-dogadjaji.webp'
+import RadionicaGalerija from '../components/Galerie/galerija-radionica.webp'
 
 function Home() {
   return (

@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "../src/components/Navbar";
-import Home from "../src/components/Home";
-import Dobrodosli from "./components/Dobrodosli.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+ import Home from "./Pages/Home.jsx";
+import Dobrodosli from "./Pages/Dobrodosli.jsx";
+
 
 
 
@@ -23,8 +24,9 @@ function App() {
       {!showDobrodosli && (
         <>
           <Navbar />
-          <Routes>
-             <Route path="/" element={<Home />} />
+           <Routes>
+            <Route path="/" element={<Home />} />
+         
           </Routes>
         </>
       )}
