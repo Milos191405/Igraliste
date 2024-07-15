@@ -38,7 +38,7 @@ function Footer() {
             </div>
           </div>
         </article>
-        <div className="lg:flex lg:justify-between">
+        <div className="lg:flex lg:justify-around">
           <p className="md:text-sm ">
             Nas sajt podrzava Pokrajinski sekretarijat za privredu i turizam
           </p>

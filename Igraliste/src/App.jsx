@@ -3,6 +3,12 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar.jsx";
  import Home from "./Pages/Home.jsx";
 import Dobrodosli from "./Pages/Dobrodosli.jsx";
+ import Rodjendaonica from "./Pages/Rodjendaonica.jsx";
+ import Radionice from './Pages/Radionice.jsx';
+ import Blog from './Pages/Blog.jsx' 
+ import Cenovnik from './Pages/Cenovnik.jsx'
+ import Galerija from './Pages/Galerija.jsx'
+ import Kontakt from './Pages/Kontakt.jsx'
 
 
 
@@ -24,9 +30,14 @@ function App() {
       {!showDobrodosli && (
         <>
           <Navbar />
-           <Routes>
+          <Routes>
             <Route path="/" element={<Home />} />
-         
+             <Route path="/rodjendaonica" element={<Rodjendaonica />} /> 
+             <Route path="/radionice" element={<Radionice />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/cenovnik" element={<Cenovnik />} />
+            <Route path="/galerija" element={<Galerija />} />
+            <Route path="/kontakt" element={<Kontakt />} /> 
           </Routes>
         </>
       )}
