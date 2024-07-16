@@ -62,7 +62,7 @@ function Navbar() {
           <li
             key={to}
             onClick={closeMenu}
-            className="text-2xl py-2 w-3/4 text-center hover:text-gray-700 mb-2"
+            className="text-xl text-left py-2 w-3/4  hover:text-gray-700 mb-2"
           >
             <Link to={to}>{label}</Link>
           </li>

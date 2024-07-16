@@ -14,7 +14,7 @@ import RadionicaGalerija from '../components/Galerie/galerija-radionica.webp'
 
 function Home() {
   return (
-    <main className="pt-[80px] w-full overflow-x-hidden ">
+    <main className="pt-[80px] xl:pt-[100px] w-full overflow-x-hidden ">
       {/* <Swiper /> */}
       <Carousel />
       <article className="flex flex-col md:flex-row  px-2 w-screen bg-white    ">

@@ -9,7 +9,7 @@ function Footer() {
           <div>
             <h3 className="text-sm md:text-lg py-2">Info</h3>
             <p className="md:text-sm">Kosancic Ivana 6, 21000 Novi Sad</p>
-            <p className="md:text-smtext-gray-400">021/547-039 i 063.....</p>
+            <p className="md:text-smtext-gray-400">021/547-039 i 069/5547-039.....</p>
             <p className="md:text-sm">igralistenovisad@gmail.com</p>
             <p className="md:text-sm text-gray-400">
               Radno vreme: svakog dana 9 - 21h
