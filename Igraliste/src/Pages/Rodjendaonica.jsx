@@ -13,24 +13,24 @@ function Rodjendaonica() {
     <>
       <main className="pt-[80px] xl:pt-[100px] w-full overflow-x-hidden">
         <Carousel />
-        <article className="flex flex-col md:flex-row  px-2 w-screen bg-white    ">
+        <article className="flex flex-col md:flex-row  px-2 w-screen bg-white      ">
           <img
             src={Cat1}
             alt=""
-            className="w-1/2 md:w-1/5 xl:w-[30%] my-auto  mx-auto md:px-2 xl:mx-auto   "
+            className="w-1/2 md:w-1/5 xl:w-[30%] my-auto  mx-auto md:px-2 xl:mx-auto    "
           />
-          <div className="text-center text  font-style: italic px-8  md:py-4 xl:mx-4 tracking-widest  leading-relaxed ">
-            <p> Nezaboravne i maštovite proslave !</p>
+          <div className="text-center text-sm md:text-lg   font-style: italic px-8  md:py-4 xl:mx-4 tracking-widest  leading-relaxed  ">
+            <p className="xl:px-20 "> Nezaboravne i maštovite proslave!</p>
             <p>
               Svojim posetiocima Igralište nudi i mogućnost organizovane
               proslave dečijih rođendana - bez prisustva drugih gostiju, tako da
-              je čitav prostor samo slavljenicima na raspolaganju.{" "}
+              je čitav prostor samo slavljenicima na raspolaganju.
             </p>
-            <p>
+            <p className="xl:px-20 ">
               Preporučuje se proslava sa maksimalno 45 odraslih osoba i 30
               mališana.
             </p>
-            <p>
+            <p className="xl:px-20 ">
               Preporučuje se proslava sa maksimalno 45 odraslih osoba i 30
               mališana. Hranu i torte posetioci mogu sami da obezbede, ili pak
               kompletnu organizaciju posluženja mogu prepustiti nama i našim
