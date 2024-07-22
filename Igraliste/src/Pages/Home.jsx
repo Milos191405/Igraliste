@@ -3,14 +3,13 @@ import Meda from "../assets/Home/meda-igraliste.webp";
 import Panda from "../assets/Home/panda-igraliste.webp";
 import SaidAboutUs from "../components/SaidAboutUs/SaidAboutUs.jsx";
 import Carousel from "../components/CarouselHome/Carousel.jsx";
-import Blog1 from "../components/Card/odnos-dece-i-roditelja.webp";
-import Blog2 from "../components/Card/naslovna-maskenbal.webp";
-import Blog3 from "../components/Card/igraliste-i-kutkovi-za-decu-4.webp";
+import BlogPostHome from "./BlogPostHome.jsx";
 import Footer from "../components/Footer/Footer.jsx";
 import RodjendaniGalerija from "../components/Galerie/galerija-torta.webp";
-import IgraonicaGalerija from '../components/Galerie/galerija-nasaigraonica.webp'
-import SpecijalniDogadjajiGalerija from '../components/Galerie/galerija-specijalni-dogadjaji.webp'
-import RadionicaGalerija from '../components/Galerie/galerija-radionica.webp'
+import IgraonicaGalerija from "../components/Galerie/galerija-nasaigraonica.webp";
+import SpecijalniDogadjajiGalerija from "../components/Galerie/galerija-specijalni-dogadjaji.webp";
+import RadionicaGalerija from "../components/Galerie/galerija-radionica.webp";
+
 
 function Home() {
   return (
@@ -96,28 +95,8 @@ function Home() {
       <h2 className="text-center text-lg md:text-2xl py-2 bg-gray-200 ">
         Sa naseg bloga...
       </h2>
-      <article className="bg-white xl:flex overflow-hidden ">
-        <div className="py-2 px-2 mb-2 md:px-4 md:py-4  lg:px-8 lg:py-2  bg-gray-200 ">
-          <img src={Blog1} alt="" />
-          <p className="text-center text-sm md:text-lg px-4 pt-4 ">
-            Koliko je bitan topao i prisan odnos dece i roditelja?
-          </p>
-        </div>
-
-        <div className="py-2 px-2 mb-2 md:px-4 md:py-4  lg:px-8 lg:py-2 bg-gray-200">
-          <img src={Blog2} alt="" />
-          <p className="text-center text-sm  md:text-lg px-4 py-2 ">
-            Igraliste pod maskama
-          </p>
-        </div>
-
-        <div className="py-2 px-2 mb-2 md:px-4 md:py-4  lg:px-8 lg:py-2 bg-gray-200">
-          <img src={Blog3} alt="" />
-          <p className="text-center text-sm md:text-lg px-4 py-2">
-            Igraliste i kutkovi
-          </p>
-        </div>
-      </article>
+      <BlogPostHome/>
+     
       <Footer />
     </main>
   );

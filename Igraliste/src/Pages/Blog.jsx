@@ -7,6 +7,7 @@ function Blog() {
   return (
     <>
       <Carousel />
+    
       <article className=" h-[500px] flex">
         {blogData.map((blog) => (
           <div
@@ -26,19 +27,7 @@ function Blog() {
           </div>
         ))}
       </article>
-      <article>
-        nisi
-        aperiam ipsam nemo! Sequi iste aspernatur velit pariatur quia magnam,
-        illum asperiores deserunt illo quam odit maiores voluptates. Laboriosam
-        ratione natus temporibus! Facere non consequatur atque quae minus
-        impedit architecto est obcaecati itaque ab, amet eligendi porro
-        excepturi explicabo, ratione magni cumque, repudiandae sequi earum
-        adipisci in quos corrupti natus voluptatum. Nesciunt consequuntur facere
-        cum dolorem accusamus, perspiciatis laboriosam mollitia at iusto, minus
-        sequi laudantium in, fugiat laborum unde debitis qui earum accusantium
-        
-  
-      </article>
+     
     </>
   );
 }
