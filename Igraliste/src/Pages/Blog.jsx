@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import Carousel from "../components/CarouselHome/Carousel.jsx";
 import blogData from "../data/blogData.jsx"; // Ensure this import is correct
@@ -7,11 +6,16 @@ function Blog() {
   return (
     <>
       <Carousel />
+<<<<<<< HEAD
 
       <article className=" h-[500px] flex">
+=======
+    
+      <article className="h-[500px] flex flex-wrap">
+>>>>>>> origin/main
         {blogData.map((blog) => (
           <div
-            key={blog.id}
+            key={blog.id} // Use a unique identifier for the key
             className="py-2 px-2 mb-2 md:px-4 md:py-4 lg:px-8 lg:py-2 bg-gray-500 mx-4"
           >
             <Link to={`/blog/${encodeURIComponent(blog.title)}`} className="">
