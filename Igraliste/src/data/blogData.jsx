@@ -14,8 +14,8 @@ const blogData = [
         Koliko u Igralištu možete predahnuti od stalne brige za dete i podeliti odgovornost sa našim animatorkama, toliko vreme provedeno u njemu možete iskoristiti u zajedničkoj igri i učenju sa vašim detetom. U Igralištu vam nudimo pregršt društvenih igara i Didaktinih radnih listova koje možete zajedno popunjavati. Takođe, vaš primer i vaše prisustvo uliva detetu sigurnost i daje podstrek da se samostalno spusti niz tobogan, popne uz nagib ili, pak, provuče kroz prepreke u našem lavirintu.
       </div>
       <div>
-        <img src=${Blog1} alt="some text" className="w-full h-auto mb-4" />
-        <p></p>
+        <img src=${Blog1} alt="Additional Image 1" className="w-full h-auto mb-4" />
+        <p>Additional text related to the first additional image.</p>
       </div>
       <div>
         <img src=${Blog2} alt="Additional Image 2" className="w-full h-auto mb-4" />
