@@ -4,15 +4,9 @@ import blogData from "../data/blogData.jsx";
 
 function BlogPost() {
   const { title } = useParams();
-<<<<<<< HEAD
-const decodeTitle = decodeURIComponent(title);
-  const blog = blogData.find((post) => post.title === decodeTitle);
-=======
-  const decodedTitle = decodeURIComponent(title); // Decode the title from URL
-  console.log("Decoded Title:", decodedTitle); // Debug log
-
+  const decodedTitle = decodeURIComponent(title); 
+  console.log("Decoded Title:", decodedTitle); 
   const blog = blogData.find((post) => post.title === decodedTitle);
->>>>>>> origin/main
 
   if (!blog) {
     return <div>Blog post not found.</div>;
