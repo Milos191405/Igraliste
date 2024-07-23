@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
-import { RiCheckboxCircleFill } from "react-icons/ri";
+//import { RiCheckboxCircleFill } from "react-icons/ri";
 import Igraliste1 from "../../assets/Home/Igraliste1.jpg";
 import Igraliste2 from "../../assets/Home/Igraliste2.jpg";
 import Igraliste3 from "../../assets/Home/Igraliste3.jpg";
@@ -13,6 +13,7 @@ function App() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -32,25 +33,41 @@ function App() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
   };
 
-   const goToSlide = (slideIndex) => {
-     setCurrentIndex(slideIndex);
-   };
+  // const goToSlide = (slideIndex) => {
+  //   setCurrentIndex(slideIndex);
+  // };
 
   return (
-    <div className="h-[200px] sm:h-[300px] md:h-[400px] xl:h-[600px] 2xl:h-[800px] w-screen m-auto relative group -z-10 overflow-x-hidden">
+    <div
+      className="h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[800px] w-screen m-auto relative overflow-x-hidden"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full bg-center bg-cover duration-500"
       ></div>
       {/* Left Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div
+        className={`absolute top-[50%] -translate-y-1/2 left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer transition-opacity duration-300 ${
+          isHovered ? "opacity-100" : "opacity-0"
+        } hidden lg:block`}
+        style={{ zIndex: 10 }}
+      >
         <BsChevronCompactLeft onClick={prevSlide} size={30} />
       </div>
+
       {/* Right Arrow */}
-      <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+      <div
+        className={`absolute top-[50%] -translate-y-1/2 right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer transition-opacity duration-300 ${
+          isHovered ? "opacity-100" : "opacity-0"
+        } hidden lg:block`}
+        style={{ zIndex: 10 }}
+      >
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
-       {/* <div className="flex top-4 justify-center py-2">
+
+      {/* <div className="flex top-4 justify-center py-2">
         {slides.map((slide, slideIndex) => (
           <div
             key={slideIndex}
@@ -59,10 +76,10 @@ function App() {
               slideIndex === currentIndex ? "text-blue-500" : "text-gray-500"
             }`}
           >
-            <RiCheckboxCircleFill />
+             <RiCheckboxCircleFill /> 
           </div>
         ))}
-      </div>  */}
+      </div> */}
     </div>
   );
 }

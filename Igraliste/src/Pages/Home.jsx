@@ -1,20 +1,21 @@
-// import Swiper from './Swiper'
+
 import Meda from "../assets/Home/meda-igraliste.webp";
 import Panda from "../assets/Home/panda-igraliste.webp";
 import SaidAboutUs from "../components/SaidAboutUs/SaidAboutUs.jsx";
 import Carousel from "../components/CarouselHome/Carousel.jsx";
+import WhyWeAreSpecial from '../components/WhyWeAreSpecial/WhyWeAreSpecial.jsx'
 import BlogPostHome from "./BlogPostHome.jsx";
 import Footer from "../components/Footer/Footer.jsx";
-import RodjendaniGalerija from "../components/Galerie/galerija-torta.webp";
-import IgraonicaGalerija from "../components/Galerie/galerija-nasaigraonica.webp";
-import SpecijalniDogadjajiGalerija from "../components/Galerie/galerija-specijalni-dogadjaji.webp";
-import RadionicaGalerija from "../components/Galerie/galerija-radionica.webp";
+// import RodjendaniGalerija from "../components/Galerie/galerija-torta.webp";
+// import IgraonicaGalerija from "../components/Galerie/galerija-nasaigraonica.webp";
+// import SpecijalniDogadjajiGalerija from "../components/Galerie/galerija-specijalni-dogadjaji.webp";
+// import RadionicaGalerija from "../components/Galerie/galerija-radionica.webp";
 
 
 function Home() {
   return (
     <main className="pt-[80px] xl:pt-[100px] w-full overflow-x-hidden ">
-      {/* <Swiper /> */}
+     
       <Carousel />
       <article className="flex flex-col md:flex-row  px-2 w-screen bg-white    ">
         <img
@@ -57,33 +58,7 @@ function Home() {
           className="w-1/2 md:w-1/5 xl:w-[30%] my-auto  mx-auto md:px-2 xl:mx-auto "
         />
       </article>
-      <article className="text-center text-3xl  bg-gray-200  ">
-        <h2 className="font-style: italic text-lg md:text-xl pt-5 pb-10 xl:py-5">
-          Zasto smo posebni...
-        </h2>
-        <div className="flex flex-col  md:grid grid-cols-2 xl:flex xl:flex-row xl:justify-center pb-5 gap-y-2 gap-x-2   ">
-          <img
-            src={RodjendaniGalerija}
-            alt=""
-            className="  w-1/2 xl:w-1/6  mx-auto md:mx-[50%] xl:mx-0   pb-2 md:pb-0  "
-          />
-          <img
-            src={IgraonicaGalerija}
-            alt=""
-            className="   w-1/2 xl:w-1/6 mx-auto md:mx-0  pb-2 md:pb-0 "
-          />
-          <img
-            src={SpecijalniDogadjajiGalerija}
-            alt=""
-            className="   w-1/2 xl:w-1/6 mx-auto md:mx-[50%] xl:mx-0 pb-2 md:pb-0"
-          />
-          <img
-            src={RadionicaGalerija}
-            alt=""
-            className="   w-1/2 xl:w-1/6 mx-auto md:mx-0  pb-2 md:pb-0 "
-          />
-        </div>
-      </article>
+      <WhyWeAreSpecial/>
       <h2 className="text-center text-lg md:text-xl bg-white w-screen pt-4">
         Rekli su o nama ...
       </h2>

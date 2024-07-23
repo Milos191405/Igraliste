@@ -1,0 +1,37 @@
+/* WhyWeAreSpecial.css */
+
+.relative {
+  position: relative; /* Allows the overlay to be positioned absolutely within the container */
+}
+
+.group {
+  position: relative; /* Required for group-hover to work */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.813); /* Semi-transparent background */
+  color:  #f56565;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 300ms ease-in-out; /* Smooth transition */
+  z-index: 10; /* Ensure it appears above the image */
+}
+
+.group:hover .overlay {
+  opacity: 1; /* Show the overlay on hover */
+  cursor: pointer;
+}
+
+.overlay-text {
+  font-size: 1.25rem; /* Adjust as needed */
+  font-weight: 400; /* Semi-bold */
+  text-align: center;
+  padding: 0 1rem; /* Padding for better text fit */
+}

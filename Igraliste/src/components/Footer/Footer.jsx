@@ -9,8 +9,8 @@ function Footer() {
           <div>
             <h3 className="text-sm md:text-lg py-2">Info</h3>
             <p className="md:text-sm">Kosancic Ivana 6, 21000 Novi Sad</p>
-            <p className="md:text-smtext-gray-400">
-              021/547-039 i 069/5547-039.....
+            <p className="md:text-sm text-gray-400">
+              021/547-039 i 069/5547-039
             </p>
             <p className="md:text-sm">igralistenovisad@gmail.com</p>
             <p className="md:text-sm text-gray-400">
@@ -18,7 +18,7 @@ function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="text-sm md:text-lg py-2 ">Postanimo prijatelji</h3>
+            <h3 className="text-sm md:text-lg py-2 ">Postanimo prijatelji i pisite nam</h3>
             <div className="flex justify-start items-center gap-3 pb-4 ">
               <a
                 href="https://www.facebook.com/igralistens/"
@@ -39,7 +39,7 @@ function Footer() {
               </a>
 
               <a
-                href="viber://pa?chatURI=PUBLIC_ACCOUNT_URI"
+                href="viber://chat?number=381695547039"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center"
@@ -53,7 +53,7 @@ function Footer() {
           <p className="md:text-sm ">
             Nas sajt podrzava Pokrajinski sekretarijat za privredu i turizam
           </p>
-          <p className="text-[6px] md:text-xs ">
+          <p className=" md:text-xs ">
             Copyright © 2024 Igralište. All rights reserved.
           </p>
         </div>
