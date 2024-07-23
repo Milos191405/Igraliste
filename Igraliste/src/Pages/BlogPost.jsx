@@ -3,9 +3,9 @@ import { Helmet } from "react-helmet"
 import blogData from "../data/blogData.jsx";
 
 function BlogPost() {
-  const { id } = useParams();
-  //console.log("Blog ID from URL:", id); // Debug log
-  const blog = blogData.find((post) => post.id === parseInt(id));
+  const { title } = useParams();
+const decodeTitle = decodeURIComponent(title);
+  const blog = blogData.find((post) => post.title === decodeTitle);
 
   if (!blog) {
     return <div>Blog post not found.</div>;

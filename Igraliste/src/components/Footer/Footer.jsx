@@ -1,15 +1,17 @@
 
-import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaViber } from "react-icons/fa";
 
 function Footer() {
   return (
     <>
       <footer className="bg-black text-white  px-4 lg:">
-        <article className="lg:flex lg:justify-around py-5"> 
+        <article className="lg:flex lg:justify-around py-5">
           <div>
             <h3 className="text-sm md:text-lg py-2">Info</h3>
             <p className="md:text-sm">Kosancic Ivana 6, 21000 Novi Sad</p>
-            <p className="md:text-smtext-gray-400">021/547-039 i 069/5547-039.....</p>
+            <p className="md:text-smtext-gray-400">
+              021/547-039 i 069/5547-039.....
+            </p>
             <p className="md:text-sm">igralistenovisad@gmail.com</p>
             <p className="md:text-sm text-gray-400">
               Radno vreme: svakog dana 9 - 21h
@@ -35,6 +37,15 @@ function Footer() {
               >
                 <FaInstagram className="text-lg md:text-2xl" />
               </a>
+
+              <a
+                href="viber://pa?chatURI=PUBLIC_ACCOUNT_URI"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center"
+              >
+                <FaViber className="text-lg md:text-2xl" />
+              </a>
             </div>
           </div>
         </article>
@@ -43,7 +54,7 @@ function Footer() {
             Nas sajt podrzava Pokrajinski sekretarijat za privredu i turizam
           </p>
           <p className="text-[6px] md:text-xs ">
-            Copyright © 2023 Igralište. All rights reserved.
+            Copyright © 2024 Igralište. All rights reserved.
           </p>
         </div>
       </footer>

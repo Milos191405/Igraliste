@@ -36,7 +36,7 @@ function App() {
              <Route path="/rodjendaonica" element={<Rodjendaonica />} /> 
              <Route path="/radionice" element={<Radionice />} />
             <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:id" element={<BlogPost />} />
+            <Route path="/blog/:title" element={<BlogPost />} />
             <Route path="/cenovnik" element={<Cenovnik />} />
             <Route path="/galerija" element={<Galerija />} />
             <Route path="/kontakt" element={<Kontakt />} /> 
