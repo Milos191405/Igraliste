@@ -9,7 +9,7 @@ function BlogPostHome() {
     <section className="py-4 bg-gray-200">
       <article className="flex  flex-wrap justify-center bg-gray-200 mx-2    ">
         {lastThreeBlogs.map((blog) => (
-          <div key={blog.id} className="w-full sm:w-1/2 md:w-2/3 lg:w-[30%] xl:w-[30%] p-2 bg-white mb-2 mx-2  border border-red-500 ">
+          <div key={blog.id} className="w-full sm:w-1/2 md:w-2/3 lg:w-[30%] xl:w-[30%] p-2 bg-white mb-2 mx-2   ">
             <Link
               to={`/blog/${encodeURIComponent(blog.title)}`}
               className="block"

@@ -10,8 +10,8 @@ function WhyWeAreSpecial() {
       <h2 className="font-italic text-lg md:text-xl pt-5 pb-10 xl:py-5">
         Zasto smo posebni...
       </h2>
-      <div className="flex flex-col md:grid grid-cols-2 lg:flex lg:flex-row xl:flex xl:flex-row xl:justify-center pb-5 gap-y-2 gap-x-2">
-        <div className="relative group w-1/2 xl:w-1/5 mx-auto md:mx-0 pb-2 md:pb-0">
+      <div className="flex flex-col md:grid grid-cols-2 lg:flex lg:flex-row xl:flex xl:flex-row xl:justify-center lg:px-10  pb-5 gap-y-2 gap-x-2 xl:w-[90%] xl:mx-auto xl:py-0 xl:px-0 xl:mb-5 ">
+        <div className="relative group w-1/2 xl:w-1/4 mx-auto  md:mx-[50%] lg:mx-0 pb-2 md:pb-0">
           <img
             src={RodjendaniGalerija}
             alt="Rodjendani Galerija"
@@ -21,7 +21,7 @@ function WhyWeAreSpecial() {
             <span className="overlay-text">Nasa rodjendaonica</span>
           </div>
         </div>
-        <div className="relative group w-1/2 xl:w-1/5 mx-auto md:mx-0 pb-2 md:pb-0">
+        <div className="relative group w-1/2 xl:w-1/4 mx-auto md:mx-0 pb-2 md:pb-0">
           <img
             src={IgraonicaGalerija}
             alt="Igraonica Galerija"
@@ -31,7 +31,7 @@ function WhyWeAreSpecial() {
             <span className="overlay-text">Nasa igraonica</span>
           </div>
         </div>
-        <div className="relative group w-1/2 xl:w-1/5 mx-auto md:mx-0 pb-2 md:pb-0">
+        <div className="relative group w-1/2 xl:w-1/4 mx-auto  md:mx-[50%] lg:mx-0 pb-2 md:pb-0">
           <img
             src={SpecijalniDogadjajiGalerija}
             alt="Specijalni Dogadjaji Galerija"
@@ -41,7 +41,7 @@ function WhyWeAreSpecial() {
             <span className="overlay-text">Nasi specijalni događaji</span>
           </div>
         </div>
-        <div className="relative group w-1/2 xl:w-1/5 mx-auto md:mx-0 pb-2 md:pb-0">
+        <div className="relative group w-1/2 xl:w-1/4 mx-auto md:mx-0 pb-2 md:pb-0">
           <img
             src={RadionicaGalerija}
             alt="Radionica Galerija"
