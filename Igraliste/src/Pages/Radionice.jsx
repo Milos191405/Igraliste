@@ -20,7 +20,6 @@ function Radionice() {
           />
           <div className="text-center text-sm md:text-lg   font-style: italic px-8  md:py-4 xl:mx-4 tracking-widest  leading-relaxed  ">
             <p className="xl:px-20 ">
-              {" "}
               Idealno mesto za decu različitih uzrasta koja uživaju u kreativnom
               radu – decu koja vole da crtaju, oblikuju, slažu, mažu, peku,
               seku, cepaju, lepe, prave i stvaraju!!
@@ -55,12 +54,12 @@ function Radionice() {
         </article>
 
         <article className="text-center text-3xl  bg-gray-200  ">
-          <h2 className="font-style: italic text-lg md:text-xl pt-5 pb-10 xl:py-5">
+          <h2 className="font-style: italic text-lg md:text-xl pt-5 pb-10 xl:py-5 tracking-widest  leading-relaxed">
             Kako smo bili kreativni ...
           </h2>
 
-          <div className="flex flex-col md:grid grid-cols-2 lg:flex lg:flex-row xl:flex xl:flex-row xl:justify-center lg:px-10 pb-5 gap-y-2 xl:w-[90%] xl:mx-auto gap-x-5">
-            <div className="relative group w-1/2 xl:w-1/4 mx-auto md:mx-[50%] lg:mx-0 pb-2 md:pb-0">
+          <div className="flex flex-col md:grid grid-cols-2 lg:flex lg:flex-row xl:flex xl:flex-row xl:justify-center lg:px-20  pb-5 gap-y-5  xl:w-[90%] xl:mx-auto gap-x-5">
+            <div className="relative group w-1/2 xl:w-1/4 mx-auto  md:mx-[50%] lg:mx-0 pb-2 md:pb-0">
               <img
                 src={radionice1}
                 alt=""
@@ -71,7 +70,7 @@ function Radionice() {
               </div>
             </div>
 
-            <div className="relative group w-1/2 xl:w-1/4 mx-auto  md:mx-[50%] lg:mx-0 pb-2 md:pb-0">
+            <div className="relative group w-1/2 xl:w-1/4 mx-auto md:mx-0 pb-2 md:pb-0">
               <img
                 src={radionice2}
                 alt=""
@@ -93,7 +92,7 @@ function Radionice() {
               </div>
             </div>
 
-            <div className="relative group w-1/2 xl:w-1/4 mx-auto  md:mx-[50%] lg:mx-0 pb-2 md:pb-0">
+            <div className="relative group w-1/2 xl:w-1/4 mx-auto md:mx-0 pb-2 md:pb-0">
               <img
                 src={radionice4}
                 alt=""

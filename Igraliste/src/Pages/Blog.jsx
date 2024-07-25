@@ -5,15 +5,14 @@ import blogData from "../data/blogData.jsx";
 function Blog() {
   return (
     <>
-      <Carousel />
-      <section>
-        <h2></h2>
-      </section>
+      <div className="w-70%">
+        <Carousel />
+      </div>
 
-      <article className="h-[500px] px-60  grid grid-cols-3">
+      {/* <article className="h-[500px] px-60  grid grid-cols-3">
         {blogData.map((blog) => (
           <div
-            key={blog.id} 
+            key={blog.id}
             className="py-2 px-2 mb-2 md:px-4 md:py-4 lg:px-8 lg:py-2 bg-gray-500 mx-4"
           >
             <Link to={`/blog/${encodeURIComponent(blog.title)}`} className="">
@@ -28,7 +27,7 @@ function Blog() {
             </Link>
           </div>
         ))}
-      </article>
+      </article> */}
     </>
   );
 }

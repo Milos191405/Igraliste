@@ -22,7 +22,7 @@ function Home() {
           src={Meda}
           className="w-1/2 md:w-1/5 xl:w-[30%] my-auto  mx-auto md:px-2 xl:mx-auto   "
         />
-        <div className="text-center text-sm  font-style: italic px-8  md:py-4 xl:mx-4 tracking-widest  leading-relaxed ">
+        <div className="text-center text-sm md:text-lg font-style: italic px-8  md:py-4 xl:mx-4 tracking-widest  leading-relaxed ">
           <p className="xl:px-20 ">
             Igralište je dečija igraonica namenjena deci najmladjeg uzrasta.
             Pored prostora koji je u potpunosti prilagodjen mališanima i
