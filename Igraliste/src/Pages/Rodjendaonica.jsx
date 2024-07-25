@@ -3,10 +3,11 @@ import Footer from "../components/Footer/Footer.jsx";
 
 import Cat1 from '../assets/Rodjendaonica/rodjendaonica-cat1.jpeg'
 import Cat2 from '../assets/Rodjendaonica/rodjendaonica-cat2.jpeg'
-import rodjendaonica1 from '../assets/Rodjendaonica/rodjendaonica1.jpeg'
-import rodjendaonica2 from '../assets/Rodjendaonica/rodjendaonica2.jpeg'
-import rodjendaonica3 from '../assets/Rodjendaonica/rodjendaonica3.jpeg'
-import rodjendaonica4 from '../assets/Rodjendaonica/rodjendaonica4.jpeg'
+import RodjendaonicaImages from "../components/Rodjendaonica/Rodjendaonica-images.jsx";
+//import rodjendaonica1 from '../assets/Rodjendaonica/rodjendaonica1.jpeg'
+//import rodjendaonica2 from '../assets/Rodjendaonica/rodjendaonica2.jpeg'
+//import rodjendaonica3 from '../assets/Rodjendaonica/rodjendaonica3.jpeg'
+//import rodjendaonica4 from '../assets/Rodjendaonica/rodjendaonica4.jpeg'
 
 function Rodjendaonica() {
   return (
@@ -44,7 +45,9 @@ function Rodjendaonica() {
           />
         </article>
 
-        <article className="text-center text-3xl  bg-gray-200  ">
+        <RodjendaonicaImages/>
+
+        {/* <article className="text-center text-3xl  bg-gray-200  ">
           <h2 className="font-style: italic text-lg md:text-xl pt-5 pb-10 xl:py-5">
             Nasi drugari su se ovako proveli ...
           </h2>
@@ -70,7 +73,7 @@ function Rodjendaonica() {
               className="   w-1/2 xl:w-1/6 mx-auto md:mx-0  pb-2 md:pb-0 "
             />
           </div>
-        </article>
+        </article> */}
 
         <Footer />
       </main>

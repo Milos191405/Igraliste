@@ -1,13 +1,11 @@
-import Carousel from '../components/CarouselHome/Carousel.jsx'
-import Footer from '../components/Footer/Footer.jsx'
-import jelen from '../assets/Radionice/jelen.webp'
-import zec from '../assets/Radionice/zec.webp'
-import radionice1 from '../assets/Radionice/radionice1.webp'
-import radionice2 from '../assets/Radionice/radionice2.webp'
-import radionice3 from '../assets/Radionice/radionice3.webp'
-import radionice4 from '../assets/Radionice/radionice4.webp'
-
-
+import Carousel from "../components/CarouselHome/Carousel.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+import jelen from "../assets/Radionice/jelen.webp";
+import zec from "../assets/Radionice/zec.webp";
+import radionice1 from "../assets/Radionice/radionice1.webp";
+import radionice2 from "../assets/Radionice/radionice2.webp";
+import radionice3 from "../assets/Radionice/radionice3.webp";
+import radionice4 from "../assets/Radionice/radionice4.webp";
 
 function Radionice() {
   return (
@@ -60,27 +58,51 @@ function Radionice() {
           <h2 className="font-style: italic text-lg md:text-xl pt-5 pb-10 xl:py-5">
             Kako smo bili kreativni ...
           </h2>
-          <div className="flex flex-col  md:grid grid-cols-2 xl:flex xl:flex-row xl:justify-center pb-5 gap-y-2 gap-x-2   ">
-            <img
-              src={radionice1}
-              alt=""
-              className="  w-1/2 xl:w-1/6  mx-auto md:mx-[50%] xl:mx-0   pb-2 md:pb-0  "
-            />
-            <img
-              src={radionice2}
-              alt=""
-              className="   w-1/2 xl:w-1/6 mx-auto md:mx-0  pb-2 md:pb-0 "
-            />
-            <img
-              src={radionice3}
-              alt=""
-              className="   w-1/2 xl:w-1/6 mx-auto md:mx-[50%] xl:mx-0 pb-2 md:pb-0"
-            />
-            <img
-              src={radionice4}
-              alt=""
-              className="   w-1/2 xl:w-1/6 mx-auto md:mx-0  pb-2 md:pb-0 "
-            />
+
+          <div className="flex flex-col md:grid grid-cols-2 lg:flex lg:flex-row xl:flex xl:flex-row xl:justify-center lg:px-10 pb-5 gap-y-2 xl:w-[90%] xl:mx-auto gap-x-5">
+            <div className="relative group w-1/2 xl:w-1/4 mx-auto md:mx-[50%] lg:mx-0 pb-2 md:pb-0">
+              <img
+                src={radionice1}
+                alt=""
+                className="w-full h-full object-cover transition-transform duration-300 ease-in-out "
+              />
+              <div className="overlay group-hover:opacity-100">
+                <span className="overlay-text">Mali kuvari</span>
+              </div>
+            </div>
+
+            <div className="relative group w-1/2 xl:w-1/4 mx-auto  md:mx-[50%] lg:mx-0 pb-2 md:pb-0">
+              <img
+                src={radionice2}
+                alt=""
+                className=" w-full h-full object-cover transition-transform duration-300 ease-in-out "
+              />
+              <div className="overlay group-hover:opacity-100">
+                <span className="overlay-text">Nase more</span>
+              </div>
+            </div>
+
+            <div className="relative group w-1/2 xl:w-1/4 mx-auto  md:mx-[50%] lg:mx-0 pb-2 md:pb-0">
+              <img
+                src={radionice3}
+                alt=""
+                className=" w-full h-full object-cover transition-transform duration-300 ease-in-out"
+              />
+              <div className="overlay group-hover:opacity-100">
+                <span className="overlay-text">Zrno po zrno...</span>
+              </div>
+            </div>
+
+            <div className="relative group w-1/2 xl:w-1/4 mx-auto  md:mx-[50%] lg:mx-0 pb-2 md:pb-0">
+              <img
+                src={radionice4}
+                alt=""
+                className=" w-full h-full object-cover transition-transform duration-300 ease-in-out "
+              />
+              <div className="overlay group-hover:opacity-100">
+                <span className="overlay-text">Novogodisnja</span>
+              </div>
+            </div>
           </div>
         </article>
 
@@ -89,6 +111,5 @@ function Radionice() {
     </>
   );
 }
-  
-      
+
 export default Radionice;

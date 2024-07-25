@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 //import { RiCheckboxCircleFill } from "react-icons/ri";
 import Igraliste1 from "../../assets/Home/Igraliste1.jpg";
@@ -14,15 +14,29 @@ function App() {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const intervalIdRef = useRef(null);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 2000);
+    if (!isHovered) {
+      intervalIdRef.current = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+      }, 3000);
+    } else {
+      if (intervalIdRef.current) {
+        clearInterval(intervalIdRef.current);
+        intervalIdRef.current = null;
+      }
+    }
 
-    return () => clearInterval(intervalId);
-  }, [slides.length]);
+    return () => {
+      if (intervalIdRef.current) {
+        clearInterval(intervalIdRef.current);
+      }
+    };
+  }, [isHovered, slides.length]);
 
+  
+    
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? slides.length - 1 : prevIndex - 1
