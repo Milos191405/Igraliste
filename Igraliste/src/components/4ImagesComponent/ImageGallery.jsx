@@ -1,6 +1,6 @@
 
 import PropTypes from "prop-types";
-import "./ImageGallery.css"; 
+
 
 function ImageGallery({ title, images }) {
   return (
