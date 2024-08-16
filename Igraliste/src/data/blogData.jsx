@@ -8,19 +8,32 @@ const blogData = [
     title: "Koliko je bitan topao i prisan odnos dece i roditelja?",
     image: Blog1,
     content: `
-     <div> 
-        Većina roditelja pokušava da izgradi topao i prisan odnos sa svojim detetom i mnogi će se složiti da je to vrlo bitno, ali ako vam kažemo da je takav odnos preduslov za uspešno funkcionisanje u svim drugim sferama razvoja i života naših mališana uopšte, verujemo da ćete prisnost sa detetom staviti kao prioritet u vaspitanju.
-        Od prvog dana detetovog života, na osnovu odnosa sa osobom koja o detetu najviše brine, ono stvara sliku o sebi kao vrednom ljubavi ili ne, kao i sliku o svetu kao bezbednom mestu za život ili ne. To jest, kroz prisan i topao odnos sa roditeljem, čiji je ključ u praćenju, prepoznavanju, i doslednom odgovaranju na detetove potrebe, mališani stiču bazičan osećaj sigurnosti. Ukoliko kod deteta izostaje bazičan osećaj sigurnosti, to trajno ostavlja posledice na njegov emotivni razvoj i samopouzdanje, a svi znamo koliko je samopouzdanje bitno za postizanje uspeha u bilo kom domenu.
-        Koliko u Igralištu možete predahnuti od stalne brige za dete i podeliti odgovornost sa našim animatorkama, toliko vreme provedeno u njemu možete iskoristiti u zajedničkoj igri i učenju sa vašim detetom. U Igralištu vam nudimo pregršt društvenih igara i Didaktinih radnih listova koje možete zajedno popunjavati. Takođe, vaš primer i vaše prisustvo uliva detetu sigurnost i daje podstrek da se samostalno spusti niz tobogan, popne uz nagib ili, pak, provuče kroz prepreke u našem lavirintu.
+     <div>
+    <p>Većina roditelja pokušava da izgradi topao i prisan odnos sa svojim detetom i mnogi će se složiti da je to vrlo bitno, ali ako vam kažemo da je takav odnos preduslov za uspešno funkcionisanje u svim drugim sferama razvoja i života naših mališana uopšte, verujemo da ćete prisnost sa detetom staviti kao prioritet u vaspitanju.</p>
+    
+    <p>Od prvog dana detetovog života, na osnovu odnosa sa osobom koja o detetu najviše brine, ono stvara sliku o sebi kao vrednom ljubavi ili ne, kao i sliku o svetu kao bezbednom mestu za život ili ne.</p>
+    
+    <p>To jest, kroz prisan i topao odnos sa roditeljem, čiji je ključ u praćenju, prepoznavanju, i doslednom odgovaranju na detetove potrebe, mališani stiču bazičan osećaj sigurnosti.</p>
+    
+    <p>Ukoliko kod deteta izostaje bazičan osećaj sigurnosti, to trajno ostavlja posledice na njegov emotivni razvoj i samopouzdanje, a svi znamo koliko je samopouzdanje bitno za postizanje uspeha u bilo kom domenu.</p>
+    
+    <p>Koliko u Igralištu možete predahnuti od stalne brige za dete i podeliti odgovornost sa našim animatorkama, toliko vreme provedeno u njemu možete iskoristiti u zajedničkoj igri i učenju sa vašim detetom.</p>
+    
+    <p>U Igralištu vam nudimo pregršt društvenih igara i Didaktinih radnih listova koje možete zajedno popunjavati.</p>
+    
+    <p>Takođe, vaš primer i vaše prisustvo uliva detetu sigurnost i daje podstrek da se samostalno spusti niz tobogan, popne uz nagib ili, pak, provuče kroz prepreke u našem lavirintu.</p>
+</div>
+
+      <div class="">
+        <img src="${Blog1}" alt="Prisan i topao odnos dece i roditelja" class="w-full " />
+        <!--  <p>Additional text related to the first additional image.</p> -->
       </div>
-      <div>
-        <img src=${Blog1} alt="Additional Image 1" className="w-full h-auto mb-4" />
-        <p>Additional text related to the first additional image.</p>
+      
+      <div class="my-4">
+        <img src="${Blog2}" alt="Additional image for blog post" class="w-full h-auto rounded-lg shadow-md" />
+        <!--  <p>Additional text related to the second additional image.</p> -->
       </div>
-      <div>
-        <img src=${Blog2} alt="Additional Image 2" className="w-full h-auto mb-4" />
-        <p>Additional text related to the second additional image.</p>
-      </div>`,
+    `,
   },
   {
     id: 2,

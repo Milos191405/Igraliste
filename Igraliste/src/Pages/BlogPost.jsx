@@ -17,12 +17,13 @@ function BlogPost() {
       <Helmet>
         <title>{blog.title}</title>
       </Helmet>
-      <div className="pt-[100px] mx-auto p-4">
-        <img src={blog.image} alt={blog.title} className="w-3/4 h-auto mb-4" />
+      <div className="pt-[100px] mx-auto p-4 w-3/4 bg-red-500">
+        <img src={blog.image} alt={blog.title} className="w-full h-auto mb-4" />
         <h1 className="text-2xl font-bold mb-4 text-center">{blog.title}</h1>
         <div
-          className="text-sm md:text-lg px-4 pt-4"
+          className=" text-sm md:text-lg px-4 "
           dangerouslySetInnerHTML={{ __html: blog.content }}
+         
         />
       </div>
     </>

@@ -19,7 +19,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 h-[80px] xl:h-[100px] w-full flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700 z-50">
+    <nav className="fixed top-0 h-[80px] xl:h-[100px] w-full flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700 overflow-x-hidden  z-50">
       <div>
         <img src={Logo} alt="Logo" className="w-[200px] xl:w-[250px]" />
       </div>
