@@ -1,10 +1,10 @@
 
 import PropTypes from "prop-types";
-//import "./ImageGallery.css"; // Import the CSS file if you have any specific styles
+import "./ImageGallery.css"; 
 
 function ImageGallery({ title, images }) {
   return (
-    <article className="text-center text-3xl bg-gray-200">
+ <article className="text-center text-3xl bg-gray-200">
       <h2 className="font-italic text-lg md:text-xl pt-5 pb-10 xl:py-5">
         {title}
       </h2>
