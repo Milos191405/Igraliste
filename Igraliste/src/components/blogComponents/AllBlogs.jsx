@@ -16,7 +16,7 @@ function AllBlogs() {
                     ) => (
             <div
               key={blog.id}
-              className="w-full py-2  px-2 mb-2 md:px-4 md:py-4 lg:px-8 lg:py-2 mx-auto border "
+              className="w-full py-2  px-2 mb-2 md:px-4 md:py-4 lg:px-8 lg:py-2 mx-auto  "
             >
               <Link to={`/blog/${encodeURIComponent(blog.title)}`} className="">
                 <img
