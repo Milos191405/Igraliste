@@ -19,9 +19,30 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 h-[80px] xl:h-[100px] w-full flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700 overflow-x-hidden  z-50">
-      <div>
-        <img src={Logo} alt="Logo" className="w-[200px] xl:w-[250px]" />
+    <nav
+      className={`fixed top-0 w-full ${
+        nav ? "h-screen" : "h-[80px]"
+      } xl:h-[100px] flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700 z-50 transition-all  duration-300 ease-in-out `}
+    >
+      <div className="flex justify-between items-center w-full  ">
+        {/* Logo */}
+        <Link to="/" className="flex items-center" >
+          <img
+            src={Logo}
+            alt="Logo"
+            className="w-[200px] xl:w-[250px] z-50 absolute top-0 left-4"
+          />
+        </Link>
+        {/* Hamburger Icon */}
+        <button
+          onClick={handleClick}
+          className="lg:hidden z-50 cursor-pointer absolute top-6 right-4 "
+          aria-controls="mobile-menu"
+          aria-expanded={nav ? "true" : "false"}
+          aria-label="Toggle navigation menu"
+        >
+          {!nav ? <FaBars /> : <FaTimes />}
+        </button>
       </div>
 
       {/* Desktop Menu */}
@@ -40,29 +61,18 @@ function Navbar() {
         ))}
       </ul>
 
-      {/* Hamburger Icon */}
-      <button
-        onClick={handleClick}
-        className="lg:hidden z-40 cursor-pointer"
-        aria-controls="mobile-menu"
-        aria-expanded={nav ? "true" : "false"}
-        aria-label="Toggle navigation menu"
-      >
-        {!nav ? <FaBars /> : <FaTimes />}
-      </button>
-
       {/* Mobile Menu */}
       <ul
         id="mobile-menu"
         className={`${
           nav ? "flex" : "hidden"
-        } absolute top-0 left-0 w-full h-screen bg-[#fffdfd] text-gray-700 flex-col justify-center items-center z-40`}
+        } absolute top-0 left-0 w-full h-screen bg-[#fffdfd] text-gray-700 flex-col justify-center z-40`}
       >
         {navLinks.map(({ to, label }) => (
           <li
             key={to}
             onClick={closeMenu}
-            className="text-xl text-left py-2   hover:text-gray-700 mb-2 w-screen px-6  border-b border-gray-300"
+            className="text-xl text-left py-2 hover:text-gray-700 mb-2 w-screen px-6 border-b border-gray-300"
           >
             <Link to={to}>{label}</Link>
           </li>

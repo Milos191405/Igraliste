@@ -5,7 +5,6 @@ import SaidAboutUs from "../components/SaidAboutUs/SaidAboutUs.jsx";
 import Carousel from "../components/CarouselHome/Carousel.jsx";
 // import WhyWeAreSpecial from '../components/WhyWeAreSpecial/WhyWeAreSpecial.jsx'
 import BlogPostHome from "./BlogPostHome.jsx";
-import Footer from "../components/Footer/Footer.jsx";
 import TextComponent from "../components/TextComponent/TextComponent.jsx";
 import ImageGallery from "../components/4ImagesComponent/ImageGallery.jsx";
 //import "../../components/4ImagesComponent/ImageGallery.css";
@@ -49,22 +48,12 @@ function Home() {
  ];
   return (
     <Layout>
-     
       <Carousel />
-      <TextComponent
-        leftImage={Meda}
-        rightImage={Panda}
-        text={textContent}
-      />
+      <TextComponent leftImage={Meda} rightImage={Panda} text={textContent} />
 
-      <ImageGallery
-        title={title}
-        images={images}
-      />
-        <SaidAboutUs />
-      <BlogPostHome/>
-     
-      <Footer />
+      <ImageGallery title={title} images={images} />
+      <SaidAboutUs />
+      <BlogPostHome title=" Sa naseg bloga..." />
     </Layout>
   );
 }

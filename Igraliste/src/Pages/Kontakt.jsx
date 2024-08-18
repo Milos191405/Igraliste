@@ -1,9 +1,14 @@
+import Layout from '../components/Layout/Layout.jsx'
+import Carousel from "../components/CarouselHome/Carousel.jsx";
+
 function Kontakt() {
   return (
-    <div className="pt-60 bg-white h-screen flex items-center justify-center">
-        
-      <div className="bg-white text-3xl ">In progress...</div>
-    </div>
+    <>
+      <Layout>
+        <Carousel/>
+      </Layout>   
+      
+    </>
   );
 }
 export default Kontakt

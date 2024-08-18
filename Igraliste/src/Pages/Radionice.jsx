@@ -1,6 +1,6 @@
 import Layout from "../components/Layout/Layout.jsx";
 import Carousel from "../components/CarouselHome/Carousel.jsx";
-import Footer from "../components/Footer/Footer.jsx";
+// import Footer from "../components/Footer/Footer.jsx";
 import TextComponent from "../components/TextComponent/TextComponent.jsx";
 import jelen from "../assets/Radionice/jelen.webp";
 import zec from "../assets/Radionice/zec.webp";
@@ -49,8 +49,6 @@ function Radionice() {
         <Carousel />
         <TextComponent leftImage={jelen} rightImage={zec} text={textContent} />
         <ImageGallery title={title} images={images} />
-
-        <Footer />
       </Layout>
     </>
   );

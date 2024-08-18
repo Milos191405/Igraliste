@@ -1,6 +1,6 @@
 import Layout from "../components/Layout/Layout.jsx";
 import Carousel from "../components/CarouselHome/Carousel.jsx";
-import Footer from "../components/Footer/Footer.jsx";
+// import Footer from "../components/Footer/Footer.jsx";
 import TextComponent from "../components/TextComponent/TextComponent.jsx";
 
 import Cat1 from "../assets/Rodjendaonica/rodjendaonica-cat1.jpeg";
@@ -49,7 +49,6 @@ function Rodjendaonica() {
         <Carousel />
         <TextComponent leftImage={Cat1} rightImage={Cat2} text={textContent} />
         <ImageGallery title={title} images={images} />
-        <Footer />
       </Layout>
     </>
   );

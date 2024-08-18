@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
-import blogData from "../data/blogData.jsx"; 
+import blogData from "../../data/blogData.jsx";
 import PropTypes from "prop-types";
 
-function BlogPostHome({ title = "", className= ""}) {
+function LastBlog({ title = "", className = "" }) {
   // Slice the last 3 items from blogData
-  const lastThreeBlogs = blogData
-    .sort((a, b ) => b.id - a.id)
-    .slice(0, 3);
+    const lastThreeBlogs = blogData
+        .sort((a, b) => b.id - a.id)
+        .slice(0, 1);
+   
 
   return (
     <div className={`relative ${className}`}>
@@ -18,7 +19,7 @@ function BlogPostHome({ title = "", className= ""}) {
           {lastThreeBlogs.map((blog) => (
             <div
               key={blog.id}
-              className="w-full sm:w-1/2 md:w-2/3 lg:w-[30%] xl:w-[30%] p-2 bg-white mb-2 mx-2 hover:scale-105 transition-transform duration-300 ease-in-out    "
+              className="w-full sm:w-1/2 md:w-2/3 lg:w-[30%] xl:w-[50%] p-2 bg-white mb-2 mx-2 hover:scale-105 transition-transform duration-300 ease-in-out    "
             >
               <Link
                 to={`/blog/${encodeURIComponent(blog.title)}`}
@@ -41,9 +42,9 @@ function BlogPostHome({ title = "", className= ""}) {
   );
 }
 
-BlogPostHome.propTypes = {
+LastBlog.propTypes = {
   title: PropTypes.string,
   className: PropTypes.string,
 };
 
-export default BlogPostHome;
+export default LastBlog;

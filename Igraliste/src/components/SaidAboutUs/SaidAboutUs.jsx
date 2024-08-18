@@ -90,20 +90,20 @@ export default function App() {
   // };
   return (
     <>
-      <h2 className="text-center text-lg md:text-xl bg-white w-screen pt-4">
+      <h2 className="text-center text-lg md:text-xl  bg-gray-100 w-screen  pt-4">
         Rekli su o nama ...
       </h2>
       <div
-        className="relative w-full h-[450px] bg-gray-100 overflow-hidden"
+        className="relative w-full  bg-gray-100 overflow-hidden"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
         {/* Slide */}
-        <div className="flex items-center justify-center h-full p-6 text-center">
+        <div className="flex items-center justify-center lg:min-h-[300px] p-6 text-center">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg mb-4">{slides[currentIndex].text}</p>
             {slides[currentIndex].author && (
-              <p className="text-red-600 text-md">
+              <p className="text-red-600 text-md pt-4 pb-4">
                 {slides[currentIndex].author}
               </p>
             )}
