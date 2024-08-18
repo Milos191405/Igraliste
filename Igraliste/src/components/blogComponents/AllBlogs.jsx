@@ -1,18 +1,16 @@
 import { Link } from "react-router-dom";
 import blogData from "../../data/blogData.jsx";
 
-
 function AllBlogs() {
+  // const blogData = blogData.sort((a, b) => b.id - a.id);
 
-    // const blogData = blogData.sort((a, b) => b.id - a.id);
-    
-    return (
-      <>
-        <article className=" w-[80%] pt-4 h-full mx-auto lg:grid grid-cols-3 gap-5   ">
-                {blogData
-            .sort((a, b) => b.id - a.id)
-            .slice(1)
-            .map((blog) => (
+  return (
+    <>
+      <article className=" w-[80%] pt-4 h-full mx-auto lg:grid grid-cols-3 gap-5   ">
+        {blogData
+          .sort((a, b) => b.id - a.id)
+          .slice(1)
+          .map((blog) => (
             <div
               key={blog.id}
               className="w-full py-2  px-2 mb-2 md:px-4 md:py-4 lg:px-8 lg:py-2 mx-auto  "
@@ -29,9 +27,9 @@ function AllBlogs() {
               </Link>
             </div>
           ))}
-        </article>
-      </>
-    );
+      </article>
+    </>
+  );
 }
 
-export default AllBlogs
+export default AllBlogs;

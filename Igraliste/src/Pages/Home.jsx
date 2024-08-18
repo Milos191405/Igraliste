@@ -49,11 +49,11 @@ function Home() {
   return (
     <Layout>
       <Carousel />
-      <TextComponent leftImage={Meda} rightImage={Panda} text={textContent} />
+       <TextComponent leftImage={Meda} rightImage={Panda} text={textContent} />
 
-      <ImageGallery title={title} images={images} />
-      <SaidAboutUs />
-      <BlogPostHome title=" Sa naseg bloga..." />
+       <ImageGallery title={title} images={images} />
+       <SaidAboutUs />
+      <BlogPostHome title=" Sa naseg bloga..." /> 
     </Layout>
   );
 }
