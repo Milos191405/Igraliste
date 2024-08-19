@@ -89,7 +89,7 @@ export default function App() {
   //   },
   // };
   return (
-    <>
+    <div className="border border-red-600">
       <h2 className="text-center text-lg md:text-xl  bg-gray-100 w-screen  pt-4">
         Rekli su o nama ...
       </h2>
@@ -147,7 +147,7 @@ export default function App() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
   

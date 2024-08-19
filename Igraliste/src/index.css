@@ -43,3 +43,47 @@
 .input:active {
     border-color: #f87171; /* Tailwind's red-500 color */
   }
+
+  /* Parallax Container */
+.parallax-container {
+  position: relative;
+  height: 300vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflowing content */
+  width: 100%;
+}
+
+/* Striped Background with Parallax Effect */
+/* Parallax Background with Stripes */
+.parallax-bg {
+  background: 
+    linear-gradient(
+      180deg, /* Direction of stripes */
+      #ffffff 0%, /* Start with red color */
+      #ffffff 100px, /* Red stripe height */
+      #FEC7D0 100px, /* Start of white color */
+      #FEC7D0 100px /* White stripe height */
+    );
+  background-size: 200px 200px; /* Adjust stripe size to fit container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150%; /* Larger height for a stronger parallax effect */
+  background-attachment: fixed; /* Fixed background for parallax effect */
+  background-position: center;
+  background-repeat: repeat;
+  z-index: -1; /* Ensure it stays behind content */
+  will-change: transform; /* Optimizes performance */
+}
+
+
+/* Content */
+/* .content {
+  position: relative;
+  padding: 0 50px;
+  
+  text-align: center;
+  height: 100vh; 
+  width: 100%;
+  z-index: 1; 
+} */

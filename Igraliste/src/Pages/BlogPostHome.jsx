@@ -9,7 +9,7 @@ function BlogPostHome({ title = "", className= ""}) {
     .slice(0, 3);
 
   return (
-    <div className={`relative ${className}`}>
+    <div className={`relative ${className} border border-red-600`}>
       <h2 className="text-center text-lg md:text-2xl py-2 bg-gray-200 ">
         {title}
       </h2>

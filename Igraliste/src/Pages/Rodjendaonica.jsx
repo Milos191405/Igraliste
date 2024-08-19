@@ -20,29 +20,29 @@ function Rodjendaonica() {
     "Hranu i torte posetioci mogu sami da obezbede, ili pak kompletnu organizaciju posluženja mogu prepustiti nama i našim saradnicima.",
   ];
 
-  const title = "Nasi drugari su se ovako proveli ...";
-  const images = [
-    {
-      src: rodjendaonica1,
-      alt: "Rodjendaonica 1",
-      caption: "Proslava rodjendana 1",
-    },
-    {
-      src: rodjendaonica2,
-      alt: "Rodjendaonica 2",
-      caption: "Proslava rodjendana 2",
-    },
-    {
-      src: rodjendaonica3,
-      alt: "Rodjendaonica 3",
-      caption: "Proslava rodjendana 3",
-    },
-    {
-      src: rodjendaonica4,
-      alt: "Rodjendaonica 4",
-      caption: "Proslava rodjendana 4",
-    },
-  ];
+    const title = "Nasi drugari su se ovako proveli ...";
+    const images = [
+      {
+        src: rodjendaonica1,
+        alt: "Rodjendaonica 1",
+        caption: "Proslava rodjendana 1",
+      },
+      {
+        src: rodjendaonica2,
+        alt: "Rodjendaonica 2",
+        caption: "Proslava rodjendana 2",
+      },
+      {
+        src: rodjendaonica3,
+        alt: "Rodjendaonica 3",
+        caption: "Proslava rodjendana 3",
+      },
+      {
+        src: rodjendaonica4,
+        alt: "Rodjendaonica 4",
+        caption: "Proslava rodjendana 4",
+      },
+ ];
   return (
     <>
       <Layout>

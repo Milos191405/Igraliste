@@ -8,9 +8,9 @@ function Kontakt() {
     <>
       <Layout>
         <Carousel />
-        <div className="flex  lg:flex-row text-center items-stretch pt-4  bg-white px-20">
-          <div className="flex flex-col  w-1/2  text-lg px-20   ">
-            <div className="pt-20 ">
+         <div className="flex flex-col px-5  lg:flex-row text-center items-stretch py-4  bg-white lg:px-20">
+          <div className="flex flex-col   lg:w-1/2 text-sm lg:text-lg lg:px-20   ">
+            <div className=" lg:pt-20 ">
               <p className="tracking-wide">
                 Ako si odgovorna i vredna osoba, ako želiš da učestvuješ na
                 rođendanima, da se igraš i zabavljaš sa decom, poslužuješ decu i
@@ -31,12 +31,12 @@ function Kontakt() {
             <div>
               <img
                 src={loveImg}
-                className="w-3/4 mx-auto pt-20 "
+                className="w-3/4 mx-auto  lg:pt-20 "
               />
             </div>
           </div>
-          <ContactForm />
-        </div>
+          <ContactForm/>
+        </div> 
       </Layout>
     </>
   );

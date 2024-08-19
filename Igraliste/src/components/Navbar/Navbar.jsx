@@ -20,13 +20,13 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full ${
-        nav ? "h-screen" : "h-[80px]"
-      } xl:h-[100px] flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700 z-50 transition-all  duration-300 ease-in-out `}
+      className={`fixed top-0 w-full border border-red-600 ${
+        nav ? "h-screen" : "h-[80px] lg:h-[100px]"
+      } flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700 z-50 transition-all duration-300 ease-in-out`}
     >
       <div className="flex justify-between items-center w-full  ">
         {/* Logo */}
-        <Link to="/" className="flex items-center" >
+        <Link to="/" className="flex items-center">
           <img
             src={Logo}
             alt="Logo"
@@ -46,7 +46,7 @@ function Navbar() {
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden lg:flex gap-2 text-sm lg:text-lg xl:text-lg 2xl:text-xl lg:gap-3">
+      <ul className="hidden lg:flex gap-2 text-sm lg:text-lg xl:text-lg 2xl:text-xl lg:gap-3 ">
         {navLinks.map(({ to, label }) => (
           <li key={to}>
             <NavLink

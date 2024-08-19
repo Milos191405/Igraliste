@@ -53,7 +53,7 @@ function App() {
 
   return (
     <div
-      className="h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[800px] w-screen m-auto relative overflow-x-hidden"
+      className="h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px] xl:h-[600px] 2xl:h-[800px] w-full relative overflow-x-hidden border border-red-600"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

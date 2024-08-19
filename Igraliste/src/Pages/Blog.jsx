@@ -17,7 +17,7 @@ function Blog() {
         <LastBlog
           const
           title="Nas najnoviji blog"
-          className="hidden lg:block w-[100%] mx-auto "
+          className=" lg:block w-[100%] mx-auto "
         />
         <AllBlogs/>
         {/* <BlogPostHome
