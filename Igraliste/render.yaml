@@ -1,12 +1,10 @@
 services:
-  - type: web
+  - type: static
     name: igraliste
-    env: node
+    env: static
     buildCommand: npm install && npm run build
-    startCommand: node server.js  # Ensure this points to the correct start command
-    branch: main
-    source:
-      repo: https://github.com/Milos191405/Igraliste
-      branch: main
-      rootDir: / # Adjust if your server file is in a subdirectory
     publishDirectory: dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
