@@ -1,18 +1,12 @@
-
 services:
   - type: web
     name: igraliste
     env: node
     buildCommand: npm install && npm run build
-    startCommand: npm start
+    startCommand: node server.js  # Ensure this points to the correct start command
     branch: main
     source:
       repo: https://github.com/Milos191405/Igraliste
       branch: main
-      rootDir: / # or the correct subdirectory
-    buildFilters:
-      includedPaths:
-        - /**/*
-      ignoredPaths:
-        - /docs/**
+      rootDir: / # Adjust if your server file is in a subdirectory
     publishDirectory: dist
