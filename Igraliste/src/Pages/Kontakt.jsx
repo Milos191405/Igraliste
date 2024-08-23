@@ -9,7 +9,7 @@ function Kontakt() {
       <Layout>
         <Carousel />
          <div className="flex flex-col px-5  lg:flex-row text-center items-stretch py-4  bg-white lg:px-20">
-          <div className="flex flex-col   lg:w-1/2 text-sm lg:text-lg lg:px-20   ">
+          <div className="flex flex-col   lg:w-1/2 text-sm md:text-lg lg:text-lg lg:px-20  ">
             <div className=" lg:pt-20 ">
               <p className="tracking-wide">
                 Ako si odgovorna i vredna osoba, ako želiš da učestvuješ na

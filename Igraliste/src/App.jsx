@@ -9,7 +9,9 @@ import Blog from './Pages/Blog.jsx';
 import BlogPost from "./Pages/BlogPost.jsx";
 import Cenovnik from './Pages/Cenovnik.jsx';
 import Galerija from './Pages/Galerija.jsx';
+import NasiSpecijalniDogadjaji from './Pages/NasiSpecijalniDogadjaji.jsx';
 import Kontakt from './Pages/Kontakt.jsx';
+
 
 function App() {
   const [showDobrodosli, setShowDobrodosli] = useState(true);
@@ -36,7 +38,12 @@ function App() {
             <Route path="/blog/:title" element={<BlogPost />} />
             <Route path="/cenovnik" element={<Cenovnik />} />
             <Route path="/galerija" element={<Galerija />} />
+            <Route
+              path="/nasi-specijalni-dogadjaji"
+              element={<NasiSpecijalniDogadjaji />}
+            />
             <Route path="/kontakt" element={<Kontakt />} />
+            
           </Routes>
         </>
       )}

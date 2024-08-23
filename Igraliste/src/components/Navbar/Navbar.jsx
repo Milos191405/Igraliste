@@ -16,13 +16,14 @@ function Navbar() {
     { to: "/cenovnik", label: "Cenovnik" },
     { to: "/galerija", label: "Galerija" },
     { to: "/kontakt", label: "Kontakt" },
+    {to: "/nasi-specijalni-dogadjaji", label: "Nasi"}
   ];
 
   return (
     <nav
-      className={`fixed top-0 w-full border border-red-600 ${
+      className={`fixed top-0 w-full  ${
         nav ? "h-screen" : "h-[80px] lg:h-[100px]"
-      } flex justify-between items-center px-4 md:px-6 bg-[#fffdfd] text-gray-700 z-50 transition-all duration-300 ease-in-out`}
+      } flex justify-between items-center px-4 md:px-6 bg-[#fffdfdb3] text-gray-700 z-50 transition-all duration-300 ease-in-out`}
     >
       <div className="flex justify-between items-center w-full  ">
         {/* Logo */}

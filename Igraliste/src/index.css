@@ -44,10 +44,15 @@
     border-color: #f87171; /* Tailwind's red-500 color */
   }
 
-  /* Parallax Container */
+  /* Parallax Container */rounded-images img {
+
+ 
+  
+}
+
 .parallax-container {
   position: relative;
-  height: 300vh; /* Full viewport height */
+  height: 100%; /* Full viewport height */
   overflow: hidden; /* Hide overflowing content */
   width: 100%;
 }
@@ -87,3 +92,4 @@
   width: 100%;
   z-index: 1; 
 } */
+

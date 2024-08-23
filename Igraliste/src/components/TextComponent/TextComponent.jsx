@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 function TextComponent({leftImage, rightImage, text}) {
 return (
-  <article className="flex flex-col md:flex-row px-2 w-full bg-white border border-red-600">
+  <article className="flex flex-col md:flex-row px-2 w-full bg-white ">
     {/* Left Image */}
     <img
       src={leftImage}
