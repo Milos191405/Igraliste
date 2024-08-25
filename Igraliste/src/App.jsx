@@ -26,8 +26,9 @@ function App() {
 
   return (
     <>
-      {showDobrodosli && <Dobrodosli />}
-      {!showDobrodosli && (
+      {showDobrodosli ? (
+        <Dobrodosli />
+      ) : (
         <>
           <Navbar />
           <Routes>
@@ -43,7 +44,7 @@ function App() {
               element={<NasiSpecijalniDogadjaji />}
             />
             <Route path="/kontakt" element={<Kontakt />} />
-            
+            {/* <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </>
       )}
