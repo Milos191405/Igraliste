@@ -30,7 +30,7 @@ function App() {
         <Dobrodosli />
       ) : (
         <>
-          <Navbar />
+        
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/rodjendaonica" element={<Rodjendaonica />} />
