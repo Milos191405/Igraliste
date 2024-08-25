@@ -6,4 +6,7 @@ export default defineConfig({
   plugins: [react()],
   base: "/", // Ensure this is correct based on your deployment URL
   assetsInclude: ["**/*.JPG", "**/*.jpg", "**/*.png", "**/*.jpeg"],
+  server: {
+    historyApiFallback: true,
+  }
 });
