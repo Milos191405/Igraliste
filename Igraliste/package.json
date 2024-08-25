@@ -7,7 +7,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "postbuild": "cp _redirects dist/",
+   
     "serve": "vite preview",
     "dev": "vite"
   },
